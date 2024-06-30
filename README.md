@@ -1,19 +1,18 @@
 # Deadlock-Detaction-And-recovery
-Description
 Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, preventing any from proceeding. It typically arises in multitasking and resource allocation scenarios.
 
-Examples of Deadlock:
+## Examples of Deadlock:
 Resource Allocation: Processes holding resources and waiting for additional resources held by others.
 Synchronization: Multiple processes waiting indefinitely for a lock.
 Networking: Two devices waiting for each other to release a resource.
 Deadlock Detection
-Algorithm Overview
+## Algorithm Overview
 Resource Allocation Graph (RAG): Models resource allocation and process-to-resource relationships.
 Cycle Detection: Checks for cycles in RAG to identify deadlock.
 Example
 Consider processes P1, P2, P3, and resources R1, R2, R3. If P1 holds R1 and requests R2, P2 holds R2 and requests R1, and P3 holds R3 and requests R2, a deadlock is detected due to the circular dependency.
 
-Deadlock Prevention
+## Deadlock Prevention
 Strategies
 Mutual Exclusion: Ensure at least one resource is not shareable.
 Hold and Wait: Acquire all necessary resources at once.
