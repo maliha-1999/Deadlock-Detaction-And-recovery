@@ -18,8 +18,11 @@ Mutual Exclusion: Ensure at least one resource is not shareable.
 Hold and Wait: Acquire all necessary resources at once.
 No Preemption: Only release resources voluntarily.
 Circular Wait: Impose a total ordering of all resource types and require processes to request resources in order.
-Example
+## Example
 To prevent the scenario mentioned above:
 
 Use mutual exclusion to ensure P1 and P2 cannot both hold R1 and R2 simultaneously.
 Implement a policy where processes request resources in a fixed order, such as R1, R2, R3
+### Output is given below
+<img src="deadlock.PNG" alt="Deadlock Detection and Prevention Image">
+
